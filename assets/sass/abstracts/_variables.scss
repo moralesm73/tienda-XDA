@@ -14,10 +14,14 @@ $raleway: 'Raleway', sans-serif;
 $regular: 400;
 $bold: 700;
 
-$xxx-large: 50px;
-$xx-large: 30px;
-$x-large: 20px;
-$large: 18px;
-$medium: 16px;
-$small: 14px;
-$x-samll: 12px;
+//Tamaño sin pixeles para transformacion de mixin
+$xxx-large: 50;
+$xx-large: 30;
+$x-large: 20;
+$large: 18;
+$medium: 16;
+$small: 14;
+$x-samll: 12;
+
+//Tamaño base del proyecto
+$font_size_base: 16;

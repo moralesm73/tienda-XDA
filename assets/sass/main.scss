@@ -7,11 +7,12 @@
     'base/typography';
 
 @import
-    'components/buttons',
-    'components/inputs';
-
-@import
+    'layout/grid',
     'layout/header',
     'layout/main',
     'layout/navigation',
     'layout/newsletter';
+
+@import
+    'components/buttons',
+    'components/inputs';
