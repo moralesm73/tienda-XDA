@@ -1,0 +1,22 @@
+.hero-body {
+    position: relative;
+    width: 100%;
+}
+
+.left-block{
+    position: relative;
+    @include column-coverter(12,12);
+    float: none;
+}
+
+@media only screen and (min-width: $breakpoint_md){
+    .hero-body {
+        overflow: hidden;
+    }
+    
+    .left-block{
+        position: relative;
+        @include column-coverter(5,12);
+        float: left;
+    }
+}

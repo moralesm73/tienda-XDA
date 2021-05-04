@@ -1,0 +1,25 @@
+.hero-image {
+    position: relative;
+    top: 0;
+    right: 0;
+    @include column-coverter(12,12);
+    @include relative-converter(height,rem,350,$font_size_base);
+    background-image: url(../images/hero-image.jpg);
+    background-position: center 21%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: $breakpoint_sm){
+    .hero-image {
+        @include relative-converter(height,rem,450,$font_size_base);
+    }
+}
+
+@media only screen and (min-width: $breakpoint_md){
+    .hero-image {
+        position: absolute;
+        @include column-coverter(7,12);
+        height: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+.main__button {
+    text-decoration: none;
+    font-family: $raleway;
+    font-weight: $bold;
+    @include relative-converter(font-size,rem,$medium,$font_size_base);
+    text-align: center;
+    display: block;
+}
+
+.main__button--primary {
+    max-width: 6rem;
+    color: $smoky_black;
+    border: 1px solid $smoky_black;
+    padding: .7rem 1.2rem;
+    &:hover {
+        border: 1px solid $quick_silver;
+    }
+    &:focus{
+        border: 1px solid $quick_silver;
+        color: $quick_silver;
+    }
+}
+
+@media only screen and (min-width: $breakpoint_md){
+    .main__button {
+        @include relative-converter(font-size,rem,$large,$font_size_base);
+        padding: .9rem 1.4rem;
+    }
+}

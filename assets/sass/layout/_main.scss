@@ -1,0 +1,37 @@
+.main {
+    @include relative-converter(max-width,rem,480,$font_size_base);
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.main__title {
+    margin-bottom: 1rem;
+    color: $smoky_black;
+}
+
+.main__subtitle {
+    color: $granite_gray;
+    padding-right: 0;
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+@media only screen and (min-width: $breakpoint_sm){
+    .main__subtitle {
+        padding-right: 5rem;
+    }
+}
+
+@media only screen and (min-width: $breakpoint_md){
+    .main {
+        @include relative-converter(max-width,rem,400,$font_size_base);
+    }
+    
+    .main__subtitle {
+        color: $granite_gray;
+        padding-right: 8rem;
+        margin-bottom: 2rem;
+        line-height: 1.6rem;
+    }
+}

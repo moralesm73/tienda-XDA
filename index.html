@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://kit.fontawesome.com/e3f9709de7.js" crossorigin="anonymous"></script>
+    <script>
+        function enviar_formulario(){
+            document.formulario.submit();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -32,11 +37,23 @@
             </div>
         </nav>
     </header>
-    <section class="row">
-        <main class="col-lg-5">
-            
-        </main>
-        <div class="col-lg-7"></div>
-    </section>
+    <div class="hero-body">
+        <section class="hero-image"></section>
+        <section class="left-block">
+            <main class="main">
+                <h1 class="main__title">LOREM IPSUM AD VALOREM</h1>
+                <p class="main__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus quam molestias odio iusto recusandae sint sit autem dolore illum, eligendi quaerat, placeat delectus fugit ipsa? Culpa hic illum nobis architecto!</p>
+                <a href="#" role="button" class="main__button main__button--primary">Ir a tienda</a>
+            </main>
+            <div class="newsletter">
+                <h2 class="newsletter__title">Newsletter</h2>
+                <form action="index.html" method="post" class="form-newsletter" name="formulario">
+                    <label for="email" class="form-newsletter__label">Correo Electrónico</label>
+                    <input type="email" class="form-newsletter__input">
+                </form>
+                <a href="javascript:enviar_formulario()"><h3 class="newsletter__submit">Suscribir</h3></a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
