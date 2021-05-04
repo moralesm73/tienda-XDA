@@ -26,6 +26,7 @@
 @media only screen and (min-width: $breakpoint_md){
     .main {
         @include relative-converter(max-width,rem,400,$font_size_base);
+        padding: 5rem 0;
     }
     
     .main__subtitle {

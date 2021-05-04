@@ -1,4 +1,38 @@
 .newsletter {
     background-color: $smoky_black;
     position: relative;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+}
+
+.newsletter__title {
+    color: $white;
+    @include relative-converter(max-width,rem,480,$font_size_base);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+}
+
+.newsletter__submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    writing-mode: vertical-lr;
+    color: $smoky_black;
+    background-color: $white;
+    text-align: center;
+    height: 82.5%;
+    @include relative-converter(font-size,rem,$large,$font_size_base);
+    padding:1rem;
+}
+
+@media only screen and (min-width: $breakpoint_md){
+    .newsletter {
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+    }
+    .newsletter__submit {
+        height: 86.5%;
+    }
 }

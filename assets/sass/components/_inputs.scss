@@ -1,0 +1,9 @@
+.form-newsletter__input {
+    border: 1px solid $isabelline;
+    color: $smoky_black;
+    font-family: $raleway;
+    font-weight: $regular;
+    @include relative-converter(font-size,rem,$small,$font_size_base);
+    width: 94%;
+    padding: .5rem;
+}

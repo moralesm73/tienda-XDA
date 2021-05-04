@@ -1,0 +1,16 @@
+.form-newsletter {
+    @include relative-converter(max-width,rem,480,$font_size_base);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3.5rem;
+}
+
+.form-newsletter__label {
+    color: $white;
+    display: block;
+    font-family: $old_standard;
+    font-weight: $regular;
+    @include relative-converter(font-size,rem,$medium,$font_size_base);
+    margin-bottom: .5rem;
+}

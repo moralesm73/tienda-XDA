@@ -3,8 +3,12 @@ html,body {
     margin: 0;
 }
 
-div, header, nav, main, section {
+div, header, nav, main, section, form {
     box-sizing: border-box;
+}
+
+a{
+	color: inherit;
 }
 
 
