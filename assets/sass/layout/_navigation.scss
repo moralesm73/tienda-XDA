@@ -2,67 +2,80 @@
     position: relative;
 }
 .navigation__logo {
-    width: 100px;
+    width: 80px;
     position: relative;
-    padding: 1.5rem 0;
+    padding: 1.3rem 0 1.1rem;
     text-align: center;
     background-color: $smoky_black;
     span{
         font-family: $old_standard;
         font-weight: $bold;
-        @include relative-converter(font-size,rem,$xx-large,$font_size_base);
+        @include relative-converter(font-size,rem,$x-large,$font_size_base);
         color: $white;
     }
 }
 
 .collapsible {
     text-align: right;
-
     label {
         display: block;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-top: .91rem;
+        padding-bottom: .91rem;
         padding-right: 1.5rem;
         font-size: 1.8rem;
+        cursor: pointer;
     }
 }
 
 #menu{
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-input:checked ~ .navigation__container {
+#menu:checked ~ .navigation__container {
     max-height: 100%;
 }
 
 .navigation__container {
-    min-height: 0;
+    max-height: 0;
     padding: 0;
     overflow: hidden;
 }
 
 .navigation__list {
     list-style-type: none;
+    margin:0;
+    padding-left: 0;
+    padding-right: 2rem;
 }
 
 .navigation__item{
     a {
         display: block;
-        text-align: left;
-        padding: .5rem;
+        text-align: right;
+        padding: .8rem;
         font-family: $raleway;
         text-decoration: none;
         color: $smoky_black;
-        font-weight: $regular;
+        font-weight: $bold;
         &:hover{
             color: $granite_gray;
         }
     }
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: $breakpoint_sm){
     .navigation__logo {
-        //top:1rem;
+        width: 100px;
+        padding: 1.5rem 0 1.3rem;
+        span{
+            font-family: $old_standard;
+            font-weight: $bold;
+            @include relative-converter(font-size,rem,$xx-large,$font_size_base);
+            color: $white;
+        }
     }
 
     .collapsible {
@@ -71,7 +84,7 @@ input:checked ~ .navigation__container {
 
     .navigation__container {
         min-height: 100%;
-        padding: .5rem 3rem .5rem 0;
+        padding: .75rem 1rem .75rem 0;
         overflow: visible;
     }
 
@@ -86,7 +99,6 @@ input:checked ~ .navigation__container {
         a {
             padding: .5rem 1rem;
             font-size: 1rem;
-            font-weight: $regular;
         }
     }
 }

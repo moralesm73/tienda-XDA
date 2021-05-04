@@ -16,6 +16,7 @@ h1 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 90%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -34,203 +35,253 @@ h1 {
   }
 }
 .row {
-  display: grid;
-  grid-template: repeat(12, fr);
+  /*display: grid;
+  grid-template: repeat(12, fr);*/
+  display: block;
+  overflow: hidden;
 }
 
 .col-sm-12 {
-  grid-column: span 12;
+  width: 100%;
+  float: left;
 }
 
 .col-sm-11 {
-  grid-column: span 11;
+  width: 91.6666666667%;
+  float: left;
 }
 
 .col-sm-10 {
-  grid-column: span 10;
+  width: 83.3333333333%;
+  float: left;
 }
 
 .col-sm-9 {
-  grid-column: span 9;
+  width: 75%;
+  float: left;
 }
 
 .col-sm-8 {
-  grid-column: span 8;
+  width: 66.6666666667%;
+  float: left;
 }
 
 .col-sm-7 {
-  grid-column: span 7;
+  width: 58.3333333333%;
+  float: left;
 }
 
 .col-sm-6 {
-  grid-column: span 6;
+  width: 50%;
+  float: left;
 }
 
 .col-sm-5 {
-  grid-column: span 5;
+  width: 41.6666666667%;
+  float: left;
 }
 
 .col-sm-4 {
-  grid-column: span 4;
+  width: 33.3333333333%;
+  float: left;
 }
 
 .col-sm-3 {
-  grid-column: span 3;
+  width: 25%;
+  float: left;
 }
 
 .col-sm-2 {
-  grid-column: span 2;
+  width: 16.6666666667%;
+  float: left;
 }
 
 .col-sm-1 {
-  grid-column: span 1;
+  width: 8.3333333333%;
+  float: left;
 }
 
 @media only screen and (min-width: 768px) {
   .col-md-12 {
-    grid-column: span 12;
+    width: 100%;
+    float: left;
   }
 
   .col-md-11 {
-    grid-column: span 11;
+    width: 91.6666666667%;
+    float: left;
   }
 
   .col-md-10 {
-    grid-column: span 10;
+    width: 83.3333333333%;
+    float: left;
   }
 
   .col-md-9 {
-    grid-column: span 9;
+    width: 75%;
+    float: left;
   }
 
   .col-md-8 {
-    grid-column: span 8;
+    width: 66.6666666667%;
+    float: left;
   }
 
   .col-md-7 {
-    grid-column: span 7;
+    width: 58.3333333333%;
+    float: left;
   }
 
   .col-md-6 {
-    grid-column: span 6;
+    width: 50%;
+    float: left;
   }
 
   .col-md-5 {
-    grid-column: span 5;
+    width: 41.6666666667%;
+    float: left;
   }
 
   .col-md-4 {
-    grid-column: span 4;
+    width: 33.3333333333%;
+    float: left;
   }
 
   .col-md-3 {
-    grid-column: span 3;
+    width: 25%;
+    float: left;
   }
 
   .col-md-2 {
-    grid-column: span 2;
+    width: 16.6666666667%;
+    float: left;
   }
 
   .col-md-1 {
-    grid-column: span 1;
+    width: 8.3333333333%;
+    float: left;
   }
 }
 @media only screen and (min-width: 992px) {
   .col-lg-12 {
-    grid-column: span 12;
+    width: 100%;
+    float: left;
   }
 
   .col-lg-11 {
-    grid-column: span 11;
+    width: 91.6666666667%;
+    float: left;
   }
 
   .col-lg-10 {
-    grid-column: span 10;
+    width: 83.3333333333%;
+    float: left;
   }
 
   .col-lg-9 {
-    grid-column: span 9;
+    width: 75%;
+    float: left;
   }
 
   .col-lg-8 {
-    grid-column: span 8;
+    width: 66.6666666667%;
+    float: left;
   }
 
   .col-lg-7 {
-    grid-column: span 7;
+    width: 58.3333333333%;
+    float: left;
   }
 
   .col-lg-6 {
-    grid-column: span 6;
+    width: 50%;
+    float: left;
   }
 
   .col-lg-5 {
-    grid-column: span 5;
+    width: 41.6666666667%;
+    float: left;
   }
 
   .col-lg-4 {
-    grid-column: span 4;
+    width: 33.3333333333%;
+    float: left;
   }
 
   .col-lg-3 {
-    grid-column: span 3;
+    width: 25%;
+    float: left;
   }
 
   .col-lg-2 {
-    grid-column: span 2;
+    width: 16.6666666667%;
+    float: left;
   }
 
   .col-lg-1 {
-    grid-column: span 1;
+    width: 8.3333333333%;
+    float: left;
   }
 }
 @media only screen and (min-width: 1200px) {
   .col-xl-12 {
-    grid-column: span 12;
+    width: 100%;
+    float: left;
   }
 
   .col-xl-11 {
-    grid-column: span 11;
+    width: 91.6666666667%;
+    float: left;
   }
 
   .col-xl-10 {
-    grid-column: span 10;
+    width: 83.3333333333%;
+    float: left;
   }
 
   .col-xl-9 {
-    grid-column: span 9;
+    width: 75%;
+    float: left;
   }
 
   .col-xl-8 {
-    grid-column: span 8;
+    width: 66.6666666667%;
+    float: left;
   }
 
   .col-xl-7 {
-    grid-column: span 7;
+    width: 58.3333333333%;
+    float: left;
   }
 
   .col-xl-6 {
-    grid-column: span 6;
+    width: 50%;
+    float: left;
   }
 
   .col-xl-5 {
-    grid-column: span 5;
+    width: 41.6666666667%;
+    float: left;
   }
 
   .col-xl-4 {
-    grid-column: span 4;
+    width: 33.3333333333%;
+    float: left;
   }
 
   .col-xl-3 {
-    grid-column: span 3;
+    width: 25%;
+    float: left;
   }
 
   .col-xl-2 {
-    grid-column: span 2;
+    width: 16.6666666667%;
+    float: left;
   }
 
   .col-xl-1 {
-    grid-column: span 1;
+    width: 8.3333333333%;
+    float: left;
   }
 }
 .navigation {
@@ -238,16 +289,16 @@ h1 {
 }
 
 .navigation__logo {
-  width: 100px;
+  width: 80px;
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1.3rem 0 1.1rem;
   text-align: center;
   background-color: #0C0910;
 }
 .navigation__logo span {
   font-family: "Old Standard TT", serif;
   font-weight: 700;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   color: #FFFFFF;
 }
 
@@ -256,51 +307,69 @@ h1 {
 }
 .collapsible label {
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.91rem;
+  padding-bottom: 0.91rem;
   padding-right: 1.5rem;
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 #menu {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-input:checked ~ .navigation__container {
+#menu:checked ~ .navigation__container {
   max-height: 100%;
 }
 
 .navigation__container {
-  min-height: 0;
+  max-height: 0;
   padding: 0;
   overflow: hidden;
 }
 
 .navigation__list {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 2rem;
 }
 
 .navigation__item a {
   display: block;
-  text-align: left;
-  padding: 0.5rem;
+  text-align: right;
+  padding: 0.8rem;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   color: #0C0910;
-  font-weight: 400;
+  font-weight: 700;
 }
 .navigation__item a:hover {
   color: #646266;
 }
 
 @media only screen and (min-width: 768px) {
+  .navigation__logo {
+    width: 100px;
+    padding: 1.5rem 0 1.3rem;
+  }
+  .navigation__logo span {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #FFFFFF;
+  }
+
   .collapsible {
     display: none;
   }
 
   .navigation__container {
     min-height: 100%;
-    padding: 0.5rem 3rem 0.5rem 0;
+    padding: 0.75rem 1rem 0.75rem 0;
     overflow: visible;
   }
 
@@ -314,7 +383,6 @@ input:checked ~ .navigation__container {
   .navigation__item a {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    font-weight: 400;
   }
 }
 

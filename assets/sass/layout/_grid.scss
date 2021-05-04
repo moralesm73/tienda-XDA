@@ -3,181 +3,280 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: $container_;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: $breakpoint_sm){
     .container {
-        width: 750px;
+        width: $container_sm;
     }
 }
 
-@media only screen and (min-width:992px){
+@media only screen and (min-width: $breakpoint_md){
     .container {
-        width: 970px;
+        width: $container_md;
     }
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width: $breakpoint_lg){
     .container {
-        width: 1170px;
+        width: $container_lg;
     }
 }
 
 .row {
-    display: grid;
-    grid-template: repeat(12, fr);
+    /*display: grid;
+    grid-template: repeat(12, fr);*/
+    display: block;
+    overflow: hidden;
 }
 
 .col-sm-12{
-    grid-column: span 12;
+    //grid-column: span 12;
+    @include column-coverter(12,12);
+    float: left;
 }
 .col-sm-11{
-    grid-column: span 11;
+    //grid-column: span 11;
+    @include column-coverter(11,12);
+    float: left;
 }
 .col-sm-10{
-    grid-column: span 10;
+    //grid-column: span 10;
+    @include column-coverter(10,12);
+    float: left;
 }
 .col-sm-9{
-    grid-column: span 9;
+    //grid-column: span 9;
+    @include column-coverter(9,12);
+    float: left;
 }
 .col-sm-8{
-    grid-column: span 8;
+    //grid-column: span 8;
+    @include column-coverter(8,12);
+    float: left;
 }
 .col-sm-7{
-    grid-column: span 7;
+    //grid-column: span 7;
+    @include column-coverter(7,12);
+    float: left;
 }
 .col-sm-6{
-    grid-column: span 6;
+    //grid-column: span 6;
+    @include column-coverter(6,12);
+    float: left;
 }
 .col-sm-5{
-    grid-column: span 5;
+    //grid-column: span 5;
+    @include column-coverter(5,12);
+    float: left;
 }
 .col-sm-4{
-    grid-column: span 4;
+    //grid-column: span 4;
+    @include column-coverter(4,12);
+    float: left;
 }
 .col-sm-3{
-    grid-column: span 3;
+    //grid-column: span 3;
+    @include column-coverter(3,12);
+    float: left;
 }
 .col-sm-2{
-    grid-column: span 2;
+    //grid-column: span 2;
+    @include column-coverter(2,12);
+    float: left;
 }
 .col-sm-1{
-    grid-column: span 1;
+    //grid-column: span 1;
+    @include column-coverter(1,12);
+    float: left;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: $breakpoint_sm){
     .col-md-12{
-        grid-column: span 12;
+        //grid-column: span 12;
+        @include column-coverter(12,12);
+        float: left;
     }
     .col-md-11{
-        grid-column: span 11;
+        //grid-column: span 11;
+        @include column-coverter(11,12);
+        float: left;
     }
     .col-md-10{
-        grid-column: span 10;
+        //grid-column: span 10;
+        @include column-coverter(10,12);
+        float: left;
     }
     .col-md-9{
-        grid-column: span 9;
+        //grid-column: span 9;
+        @include column-coverter(9,12);
+        float: left;
     }
     .col-md-8{
-        grid-column: span 8;
+        //grid-column: span 8;
+        @include column-coverter(8,12);
+        float: left;
     }
     .col-md-7{
-        grid-column: span 7;
+        //grid-column: span 7;
+        @include column-coverter(7,12);
+        float: left;
     }
     .col-md-6{
-        grid-column: span 6;
+        //grid-column: span 6;
+        @include column-coverter(6,12);
+        float: left;
     }
     .col-md-5{
-        grid-column: span 5;
+        //grid-column: span 5;
+        @include column-coverter(5,12);
+        float: left;
     }
     .col-md-4{
-        grid-column: span 4;
+        //grid-column: span 4;
+        @include column-coverter(4,12);
+        float: left;
     }
     .col-md-3{
-        grid-column: span 3;
+        //grid-column: span 3;
+        @include column-coverter(3,12);
+        float: left;
     }
     .col-md-2{
-        grid-column: span 2;
+        //grid-column: span 2;
+        @include column-coverter(2,12);
+        float: left;
     }
     .col-md-1{
-        grid-column: span 1;
+        //grid-column: span 1;
+        @include column-coverter(1,12);
+        float: left;
     }
 }
 
-@media only screen and (min-width:992px){
+@media only screen and (min-width: $breakpoint_md){
     .col-lg-12{
-        grid-column: span 12;
+        //grid-column: span 12;
+        @include column-coverter(12,12);
+        float: left;
     }
     .col-lg-11{
-        grid-column: span 11;
+        //grid-column: span 11;
+        @include column-coverter(11,12);
+        float: left;
     }
     .col-lg-10{
-        grid-column: span 10;
+        //grid-column: span 10;
+        @include column-coverter(10,12);
+        float: left;
     }
     .col-lg-9{
-        grid-column: span 9;
+        //grid-column: span 9;
+        @include column-coverter(9,12);
+        float: left;
     }
     .col-lg-8{
-        grid-column: span 8;
+        //grid-column: span 8;
+        @include column-coverter(8,12);
+        float: left;
     }
     .col-lg-7{
-        grid-column: span 7;
+        //grid-column: span 7;
+        @include column-coverter(7,12);
+        float: left;
     }
     .col-lg-6{
-        grid-column: span 6;
+        //grid-column: span 6;
+        @include column-coverter(6,12);
+        float: left;
     }
     .col-lg-5{
-        grid-column: span 5;
+        //grid-column: span 5;
+        @include column-coverter(5,12);
+        float: left;
     }
     .col-lg-4{
-        grid-column: span 4;
+        //grid-column: span 4;
+        @include column-coverter(4,12);
+        float: left;
     }
     .col-lg-3{
-        grid-column: span 3;
+        //grid-column: span 3;
+        @include column-coverter(3,12);
+        float: left;
     }
     .col-lg-2{
-        grid-column: span 2;
+        //grid-column: span 2;
+        @include column-coverter(2,12);
+        float: left;
     }
     .col-lg-1{
-        grid-column: span 1;
+        //grid-column: span 1;
+        @include column-coverter(1,12);
+        float: left;
     }
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width: $breakpoint_lg){
     .col-xl-12{
-        grid-column: span 12;
+        //grid-column: span 12;
+        @include column-coverter(12,12);
+        float: left;
     }
     .col-xl-11{
-        grid-column: span 11;
+        //grid-column: span 11;
+        @include column-coverter(11,12);
+        float: left;
     }
     .col-xl-10{
-        grid-column: span 10;
+        //grid-column: span 10;
+        @include column-coverter(10,12);
+        float: left;
     }
     .col-xl-9{
-        grid-column: span 9;
+        //grid-column: span 9;
+        @include column-coverter(9,12);
+        float: left;
     }
     .col-xl-8{
-        grid-column: span 8;
+        //grid-column: span 8;
+        @include column-coverter(8,12);
+        float: left;
     }
     .col-xl-7{
-        grid-column: span 7;
+        //grid-column: span 7;
+        @include column-coverter(7,12);
+        float: left;
     }
     .col-xl-6{
-        grid-column: span 6;
+        //grid-column: span 6;
+        @include column-coverter(6,12);
+        float: left;
     }
     .col-xl-5{
-        grid-column: span 5;
+        //grid-column: span 5;
+        @include column-coverter(5,12);
+        float: left;
     }
     .col-xl-4{
-        grid-column: span 4;
+        //grid-column: span 4;
+        @include column-coverter(4,12);
+        float: left;
     }
     .col-xl-3{
-        grid-column: span 3;
+        //grid-column: span 3;
+        @include column-coverter(3,12);
+        float: left;
     }
     .col-xl-2{
-        grid-column: span 2;
+        //grid-column: span 2;
+        @include column-coverter(2,12);
+        float: left;
     }
     .col-xl-1{
-        grid-column: span 1;
+        //grid-column: span 1;
+        @include column-coverter(1,12);
+        float: left;
     }
 }
